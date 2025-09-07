@@ -7,10 +7,13 @@ contract Example {
     uint8 a = 255; // 0 -> 255
     uint256 b = 22; // alias: uint
 
+    constructor() {}
+
     int8 c = 127; // -128 -> 127
     int256 d = -55; // alias: int256
 
     bool myCondition = true;
+    bool myCondition = true; // boolean value
 
     enum Choice {
         Up,
@@ -18,6 +21,7 @@ contract Example {
         Left,
         Right
     }
+    } // enum type
 
     Choice choice = Choice.Up;
 }
